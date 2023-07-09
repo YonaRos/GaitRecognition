@@ -22,10 +22,16 @@ Our project is divided into 3 main parts-
 we want to show the 2 diagrams that describe the project: 
 ## Diagrams
 
+<p align="center">
+  <img height="500" src="README_imgs/SYSTEM_block_diagram.png">
+</p>
 [Diagram 1]{.image .placeholder
 original-image-src="README_imgs/SYSTEM_block_diagram.png" original-image-title=""}
 *SYSTEM_block_diagram*
 
+<p align="center">
+  <img height="500" src="README_imgs/NN_block_diagram.png">
+</p>
 [Diagram 2]{.image .placeholder
 original-image-src="README_imgs/NN_block_diagram.png"
 original-image-title=""} *block diagram of the Neural Network*
