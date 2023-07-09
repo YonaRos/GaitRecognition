@@ -25,7 +25,7 @@ we want to show the 2 diagrams that describe the project:
 the diagaram of the whole system is the following:
 
 <p align="center">
-  <img height="300" src="README_imgs/SYSTEM_block_diagram.png">
+  <img height="500" src="README_imgs/SYSTEM_block_diagram.png">
 </p>
 
 
