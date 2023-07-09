@@ -597,7 +597,6 @@ def main():
     print(str(distance_list))
     print("\n\n\n\n")"""
     #print(str(sorted(distance_list.value())))
-    print("puta")
     add_to_file.close()  
     if save_out_video:
         writer.release()
