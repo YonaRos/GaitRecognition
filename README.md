@@ -39,31 +39,35 @@ where the diagaram for the whole neural network is:
 ## Installation
 
 we use 3 main models in order to process the input videos. the models
-are: MMPOSE 0.29.0v - https://github.com/open-mmlab/mmpose/tree/dev-0.29
-YOLOv7 - https://github.com/WongKinYiu/yolov7 Real-ESRGAN 0.3.0v -
-https://github.com/xinntao/Real-ESRGAN
+are:<br>
+MMPOSE 0.29.0v - https://github.com/open-mmlab/mmpose/tree/dev-0.29<br>
+YOLOv7 - https://github.com/WongKinYiu/yolov7 <br>
+Real-ESRGAN 0.3.0v - https://github.com/xinntao/Real-ESRGAN<br>
 
-in addition, the installation of the following packages is needed: torch
-\>= 1.10.1 nump \>= 1.19.5 opencv-python \>= 4.5.3.56 ast os subprocess
-math
+in addition, the installation of the following packages is needed:<br>
+torch \>= 1.10.1<br> 
+nump \>= 1.19.5 <br>
+opencv-python \>= 4.5.3.56 <br>
+ast <br>
+os <br>
+subprocess<br>
+math<br>
 
 ## Usage
 
-for the main.py:
-the main.py gets two arguments - input video path and
-GPU_id -\> 
-python main.py {input video path} {GPU_id} 
+for the main.py that is under the Video_processing folder:<br>
+the main.py gets two arguments - input video path and GPU_id -\><br> 
+python main.py {input video path} {GPU_id} <br>
 it will be required to change in the code the paths of the YOLOv7 , Real-ESRGAN and
 MMPOSE as you have installed it
 
-for the LSTM.py: 
+for the LSTM.py that is under the LSTM folder: <br>
 the LSTM doesn't get any arguments, it only requires a
 data folder that contains the data to train and test. in each epoch it
 will output the weights for each iteration into a folder named weights
 
-for the score.py:
-in the score.py code change the path in lines from the
-form:
+for the score.py that is under the Score folder:<br>
+in the score.py code change the path in lines from the form:<br>
 
 tensors_array0, reg0 = r_tensor_ff.read_func('%path') according to the
 path of the text file that holds the tensors Of course, you can add and
@@ -71,14 +75,14 @@ download the desired amount of text files (a text file is tensors of a
 person in each frame of the video), but it is important to make sure
 that the numbering of the variables is from 0 to the last text file that
 we want to examine. Then, in the loop below these lines, change the
-range according to the number of text files we are examining.
+range according to the number of text files we are examining.<br>
 
 For example, in the code we provided you with 8 text files numbered from
-0 to 7, so the loop is up to range(8).
+0 to 7, so the loop is up to range(8).<br>
 
 The code will print the score of each person described in the text file
-and return an Excel file describing the same information. After making the changes you can run the code by 
-python score.py
+and return an Excel file describing the same information. After making the changes you can run the code by <br>
+python score.py<br>
 
 the changed_mmpose_code and the changed_yolov_code containing the updated version of the programs that we used from YOLOv7 and 
 MMPOSE in order to get the tensors that we need for the data processing - the object tensors from the YOLOv7 and the skeleton points 
