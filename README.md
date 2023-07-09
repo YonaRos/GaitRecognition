@@ -49,16 +49,20 @@ math
 
 ## Usage
 
-for the main.py: the main.py gets two arguments - input video path and
-GPU_id -\> python main.py {input video path} {GPU_id} it will be
-required to change in the code the paths of the YOLOv7 , Real-ESRGAN and
+for the main.py:
+the main.py gets two arguments - input video path and
+GPU_id -\> 
+python main.py {input video path} {GPU_id} 
+it will be required to change in the code the paths of the YOLOv7 , Real-ESRGAN and
 MMPOSE as you have installed it
 
-for the LSTM.py: the LSTM doesn't get any arguments, it only requires a
+for the LSTM.py: 
+the LSTM doesn't get any arguments, it only requires a
 data folder that contains the data to train and test. in each epoch it
 will output the weights for each iteration into a folder named weights
 
-for the score.py: in the score.py code change the path in lines from the
+for the score.py:
+in the score.py code change the path in lines from the
 form:
 
 tensors_array0, reg0 = r_tensor_ff.read_func('%path') according to the
@@ -73,8 +77,12 @@ For example, in the code we provided you with 8 text files numbered from
 0 to 7, so the loop is up to range(8).
 
 The code will print the score of each person described in the text file
-and return an Excel file describing the same information.
+and return an Excel file describing the same information. After making the changes you can run the code by 
+python score.py
 
+the changed_mmpose_code and the changed_yolov_code containing the updated version of the programs that we used from YOLOv7 and 
+MMPOSE in order to get the tensors that we need for the data processing - the object tensors from the YOLOv7 and the skeleton points 
+from the MMPOSE for each frame.
 ## Dataset
 
 the link to the dataset that we have created is:
