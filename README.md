@@ -25,20 +25,16 @@ we want to show the 2 diagrams that describe the project:
 the diagaram of the whole system is the following:
 
 <p align="center">
-  <img height="500" src="README_imgs/SYSTEM_block_diagram.png">
+  <img height="300" src="README_imgs/SYSTEM_block_diagram.png">
 </p>
-[Diagram 1]{.image .placeholder
-original-image-src="README_imgs/SYSTEM_block_diagram.png" original-image-title=""}
-*SYSTEM_block_diagram*
+
 
 where the diagaram for the whole neural network is:
 
 <p align="center">
-  <img height="350" src="README_imgs/NN_block_diagram.png">
+  <img height="300" src="README_imgs/NN_block_diagram.png">
 </p>
-[Diagram 2]{.image .placeholder
-original-image-src="README_imgs/NN_block_diagram.png"
-original-image-title=""} *block diagram of the Neural Network*
+
 
 ## Installation
 
